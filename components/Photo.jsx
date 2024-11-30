@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative overflow-hidden flex justify-center items-center">
         <motion.div 
             initial={{ opacity: 0 }}
             animate={{  
@@ -29,12 +29,13 @@ const Photo = () => {
                     quality={100}
                     fill
                     alt=""
-                    className="object-contain"
+                    className="object-contain object-center"
                 />
+
             </motion.div>
 
             <motion.svg
-                className="w-[300px] cl:w-[506px] h-[300px] xl:h-[506px]"
+                className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] "
                 fill="transparent"
                 viewBox="0 0 506 506"
                 xmlns="https://www.w3.org/2000/svg"

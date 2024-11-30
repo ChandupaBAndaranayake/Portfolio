@@ -19,7 +19,7 @@ module.exports = {
 		xl: "1800px",
 	},
 	fontFamily: {
-		primary: "var(--fon-jetbrainsMono)",
+		primary: "var(--font-jetbrainsMono)",
 	},
   	extend: {
   		colors: {
@@ -50,5 +50,7 @@ module.exports = {
 		  },
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate")
+	],
 };
